@@ -1,0 +1,50 @@
+# Chat with Multiple PDFs using Google Generative AI
+
+This Streamlit application allows users to upload multiple PDF files and interactively query their content using Google Generative AI. The application extracts text from the PDFs, processes it, and provides detailed responses to user queries.
+
+## Features
+
+- **Upload and Process PDFs**: Users can upload multiple PDF files.
+- **Text Extraction and Splitting**: Extract text from PDFs and split it into manageable chunks.
+- **Vector Store Creation**: Create a vector store for efficient similarity search using Google Generative AI embeddings.
+- **Interactive Q&A**: Utilize Google Generative AI for accurate and detailed responses to user queries.
+
+
+Create and activate a virtual environment (optional but recommended):
+
+python -m venv env
+env\Scripts\activate
+
+
+Install the required packages:
+
+pip install -r requirements.txt
+
+
+Set up environment variables:
+Create a .env file in the project directory and add your Google API key:
+
+GOOGLE_API_KEY=your_google_api_key
+
+
+Run the Streamlit app:
+
+streamlit run app.py
+
+
+Upload PDF files:
+
+Use the sidebar to upload multiple PDF files.
+Click the "Submit & Process" button to process the files.
+
+
+Ask questions:
+
+Enter your query in the text input field.
+The app will return a detailed response based on the content of the uploaded PDFs.
+
+
+Project Structure
+app.py: Main application file.
+requirements.txt: List of dependencies.
+.env: Environment variables (not included, you need to create this file).
